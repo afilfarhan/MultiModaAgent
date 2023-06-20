@@ -31,27 +31,20 @@ val Robotarium: State = state(Parent) {
                     }
                     furhat.say(greeting)
                 })
-            furhat.say("Welcome to the National Robotarium!")
-            call(whatCanIDo(true))
-            firstEntry = false
-            furhat.say("Is there something specific you would like to know more about the place?")
-            furhat.ledStrip.solid(java.awt.Color(0,127,0))
+
             furhat.listen()
         }
         else {
             furhat.ledStrip.solid(java.awt.Color(127,0,0))
-            call(whatCanIDo(false))
-            random(
-                { furhat.say("Are you interested in any particular aspect of our facility or would you like a general overview of what we offer?") },
-                { furhat.say("Can you tell me what specifically brought you here so that I can direct you to the information you need?") }
-            )
+
+
             furhat.ledStrip.solid(java.awt.Color(0,127,0))
             furhat.listen()
         }
     }
     onReentry {
         furhat.ledStrip.solid(java.awt.Color(127,0,0))
-        call(whatCanIDo(false))
+
         furhat.say("Is there anything else you would like to know more about?")
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
         furhat.listen()
