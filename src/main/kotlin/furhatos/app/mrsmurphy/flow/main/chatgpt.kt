@@ -4,11 +4,15 @@ package furhatos.app.mrsmurphy.flow.main
 import com.theokanning.openai.service.OpenAiService
 import com.theokanning.openai.completion.CompletionRequest
 import furhatos.flow.kotlin.*
+import gesturecall
+import java.io.File
+import java.io.Serializable
 
+data class Rvalue(val stringValue: String, val stringArray: Array<String>)
 
-val serviceKey = "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"
+val serviceKey = "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"
 
-fun getNLGResponseFromGPT(input: String, histval: Int = 10): String {
+fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
 
     val service = OpenAiService(serviceKey)
     val history = Furhat.dialogHistory.all.takeLast(histval).mapNotNull {
@@ -71,7 +75,7 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): String {
     } catch (e: Exception) {
         println("Problem with connection to OpenAI" + e.message)
         response="Unfortunately I am unable to connect to OpenAI services.Can you please repeat the question again?"
-        return response
+        return Rvalue(response, arrayOf())
     }
     //println(response)
 //    println("-------------------------------------------------")
@@ -102,30 +106,74 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): String {
             "remorse\n" +
             "sadness\n" +
             "surprise\n" +
-            "neutra\n"+
-            "only above emotion gesture should represent the sentence\n Below are some examples\n"+
-            "you should really consider joining this team - gratitude, desire\n"+
-            "people tend to watch me there - neutral\n"+
-            "it seems like you dont care about that at all - embarrassment\n"+
-            "wow, that is some amazing thing you did - surprise\n"+
-            "are you sure about things you need to do - dissapointment, confusion\n"
+            "neutral\n"+
+            "each of the above label represent emotions expressed by human beings\ngive the appropriate label to the below sentence, you can give multiple label only if it is suitable to the sentence\n"
 
-    trainemotion+=response.drop(lengthofprompt)+" - ?"
-    completionRequest = CompletionRequest.builder()
-        .model("text-davinci-003")
-        .temperature(temperature)
-        .topP(topP)
-        .frequencyPenalty(frequencyPenalty)
-        .presencePenalty(presencePenalty)
-        .maxTokens(maxTokens)
-        .prompt(trainemotion)
-        .echo(true)
-        .build();
+
+var outputfile=""
+    var i=0;
+    trainemotion+=response.drop(lengthofprompt)
+//    try {
+//        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
+//            lines.forEach { line ->
+//                var temp=trainemotion
+//                temp+=line
+////                println(temp)
+//                completionRequest = CompletionRequest.builder()
+//                    .model("text-davinci-003")
+//                    .temperature(0.9)
+//                    .topP(topP)
+//                    .frequencyPenalty(frequencyPenalty)
+//                    .presencePenalty(presencePenalty)
+//                    .maxTokens(maxTokens)
+//                    .prompt(temp)
+//                    .echo(true)
+//                    .build();
+//                val completion = service.createCompletion(completionRequest).choices.first().text
+//                var emot = completion.trim()
+//                if(i==0){
+//                outputfile+= getLastLine(emot) +"\n"
+//                println(getLastLine(emot))
+//                i++}
+//                else{
+//                    outputfile+= getLastLine(emot) +"\n"
+//                    println(getLastLine(emot))}
+//
+//            }
+//        }
+//    } catch (e: Exception) {
+//        println("Error reading the file: ${e.message}")
+//    }
+//    try {
+//        File("outtest.txt").bufferedWriter().use { writer ->
+//            writer.flush()
+//            writer.write(outputfile)
+//            writer.close()
+//        }
+//    } catch (e: Exception) {
+//        println("Error writing the file: ${e.message}")
+//    }
+
+                    completionRequest = CompletionRequest.builder()
+                    .model("text-davinci-003")
+                    .temperature(0.9)
+                    .topP(topP)
+                    .frequencyPenalty(frequencyPenalty)
+                    .presencePenalty(presencePenalty)
+                    .maxTokens(maxTokens)
+                    .prompt(trainemotion)
+                    .echo(true)
+                    .build();
     val completion = service.createCompletion(completionRequest).choices.first().text
     var emot = completion.trim()
-    println("emotion: "+emot.drop(trainemotion.length))
-//    println(response.drop(lengthofprompt))
-    return response.drop(lengthofprompt)
+    emot= getLastLine(emot)
+    println(emot)
+//   var num= compareTextFiles("outtest.txt","realvalue.txt")
+//    println("The total score is "+ num)
+    var res=response.drop(lengthofprompt+1)
+    var emoj= arrayOf(emot)
+    println(response.drop(lengthofprompt+1))
+    return Rvalue(res, emoj)
 }
 
 
