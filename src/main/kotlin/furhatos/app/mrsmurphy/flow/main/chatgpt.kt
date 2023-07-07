@@ -10,7 +10,7 @@ import java.io.Serializable
 
 data class Rvalue(val stringValue: String, val stringArray: Array<String>)
 
-val serviceKey = "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"
+val serviceKey = "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"
 
 fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
 
@@ -42,7 +42,7 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
 
 
     //Informal prompt
-    var conversationInput= "The following conversation is between an socially interactive AI and a human, give the best possible reply for the AI\n"
+    var conversationInput= "The following conversation is between an AI and a human, the AI has informal socially engaging personality depending on that give the best possible reply for the AI in informal sentence\n"
     conversationInput+= "\n Here are the past conversations between AI and human :\n"
     conversationInput+=history
     conversationInput+="\n AI:"
@@ -107,7 +107,7 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
             "sadness\n" +
             "surprise\n" +
             "neutral\n"+
-            "each of the above label represent emotions expressed by human beings\ngive the appropriate label to the below sentence, you can give multiple label only if it is suitable to the sentence\n"
+            "each of the above label represent emotions expressed by human beings\ngive the appropriate label or labels to the below sentence\n"
 
 
 var outputfile=""
@@ -156,7 +156,7 @@ var outputfile=""
 
                     completionRequest = CompletionRequest.builder()
                     .model("text-davinci-003")
-                    .temperature(0.9)
+                    .temperature(0.8)
                     .topP(topP)
                     .frequencyPenalty(frequencyPenalty)
                     .presencePenalty(presencePenalty)
@@ -171,8 +171,8 @@ var outputfile=""
 //   var num= compareTextFiles("outtest.txt","realvalue.txt")
 //    println("The total score is "+ num)
     var res=response.drop(lengthofprompt+1)
-    var emoj= arrayOf(emot)
     println(response.drop(lengthofprompt+1))
+    val emoj = emot.split(",").toTypedArray()
     return Rvalue(res, emoj)
 }
 

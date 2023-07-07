@@ -2,9 +2,8 @@ import furhatos.app.mrsmurphy.flow.main.Rvalue
 import furhatos.flow.kotlin.*
 import furhatos.flow.kotlin.furhat
 import furhatos.gestures.*
-import io.reactivex.internal.util.ExceptionHelper.terminate
 
-import java.io.Serializable
+
 
 val confusion = defineGesture("confusion") {
     frame(0.0, 0.9) {
@@ -67,7 +66,7 @@ val confusion = defineGesture("confusion") {
 }
 
 val caring = defineGesture("caring") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.8) {
         BasicParams.EXPR_SAD to -1.0
         ARKitParams.BROW_OUTER_UP_LEFT to -0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to -0.5
@@ -76,7 +75,7 @@ val caring = defineGesture("caring") {
         ARKitParams.MOUTH_SMILE_RIGHT to 0.6
         ARKitParams.MOUTH_SMILE_LEFT to 0.6
     }
-    frame(0.5, 1.0) {
+    frame(0.8, 1.7) {
         BasicParams.EXPR_SAD to -1.0
         ARKitParams.BROW_OUTER_UP_LEFT to -0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to -0.5
@@ -85,7 +84,7 @@ val caring = defineGesture("caring") {
         ARKitParams.MOUTH_SMILE_RIGHT to 0.7
         ARKitParams.MOUTH_SMILE_LEFT to 0.7
     }
-    frame(1.0, 1.5) {
+    frame(1.7, 2.3) {
         BasicParams.EXPR_SAD to -1.0
         ARKitParams.BROW_OUTER_UP_LEFT to -0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to -0.5
@@ -94,7 +93,7 @@ val caring = defineGesture("caring") {
         ARKitParams.MOUTH_SMILE_RIGHT to 0.9
         ARKitParams.MOUTH_SMILE_LEFT to 0.9
     }
-    frame(1.5, 2.0) {
+    frame(2.3, 2.9) {
         BasicParams.EXPR_SAD to -1.0
         ARKitParams.BROW_OUTER_UP_LEFT to -0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to -0.5
@@ -103,58 +102,58 @@ val caring = defineGesture("caring") {
         ARKitParams.MOUTH_SMILE_RIGHT to 0.6
         ARKitParams.MOUTH_SMILE_LEFT to 0.6
     }
-    reset(2.0)
+    reset(2.9)
 }
 
 val admiration = defineGesture("admiration") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.9) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
         ARKitParams.EYE_LOOK_UP_LEFT to 0.5
         ARKitParams.EYE_LOOK_UP_RIGHT to 0.5
         BasicParams.EXPR_SAD to -0.5
     }
-    frame(0.5, 1.0) {
+    frame(0.9, 1.7) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
         ARKitParams.EYE_LOOK_UP_LEFT to 0.5
         ARKitParams.EYE_LOOK_UP_RIGHT to 0.5
         BasicParams.EXPR_SAD to -0.3
     }
-    frame(1.0, 1.5) {
+    frame(1.7, 2.5) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
         ARKitParams.EYE_LOOK_UP_LEFT to 0.2
         ARKitParams.EYE_LOOK_UP_RIGHT to 0.2
         BasicParams.EXPR_SAD to -0.1
     }
-    frame(1.5, 2.0) {
+    frame(2.5, 2.9) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.3
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.3
         ARKitParams.EYE_LOOK_UP_LEFT to 0.1
         ARKitParams.EYE_LOOK_UP_RIGHT to 0.1
         BasicParams.EXPR_SAD to 0.0
     }
-    reset(2.0)
+    reset(2.9)
 }
 
 
 val disappointment = defineGesture("disappointment") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.8) {
         ARKitParams.BROW_DOWN_LEFT to 0.5
         ARKitParams.BROW_DOWN_RIGHT to 0.5
         ARKitParams.EYE_LOOK_DOWN_LEFT to 0.5
         ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.5
         BasicParams.EXPR_SAD to 1
     }
-    frame(0.5, 1.0) {
+    frame(0.8, 1.5) {
         ARKitParams.BROW_DOWN_LEFT to 0.5
         ARKitParams.BROW_DOWN_RIGHT to 0.5
         ARKitParams.EYE_LOOK_DOWN_LEFT to 0.5
         ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.5
         BasicParams.EXPR_SAD to 0.7
     }
-    frame(1.0, 1.5) {
+    frame(1.5, 1.9) {
         ARKitParams.BROW_DOWN_LEFT to 0.7
         ARKitParams.BROW_DOWN_RIGHT to 0.7
         ARKitParams.EYE_LOOK_DOWN_LEFT to 0.5
@@ -163,7 +162,7 @@ val disappointment = defineGesture("disappointment") {
         ARKitParams.CHEEK_SQUINT_RIGHT to 0.8
         BasicParams.EXPR_SAD to 0.9
     }
-    frame(1.5, 2.0) {
+    frame(1.9, 2.6) {
         ARKitParams.BROW_DOWN_LEFT to 0.9
         ARKitParams.BROW_DOWN_RIGHT to 0.9
         ARKitParams.EYE_LOOK_DOWN_LEFT to 0.9
@@ -172,11 +171,11 @@ val disappointment = defineGesture("disappointment") {
         ARKitParams.CHEEK_SQUINT_LEFT to 0.8
         BasicParams.EXPR_SAD to 1.0
     }
-    reset(2.0)
+    reset(2.6)
 }
 
 val amusement = defineGesture("amusement") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.9) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
         ARKitParams.EYE_SQUINT_LEFT to 0.3
@@ -187,7 +186,7 @@ val amusement = defineGesture("amusement") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(0.5, 1.0) {
+    frame(0.9, 1.7) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.7
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.7
         ARKitParams.EYE_SQUINT_LEFT to 0.4
@@ -198,7 +197,7 @@ val amusement = defineGesture("amusement") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(1.0, 1.5) {
+    frame(1.7, 2.5) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.9
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.9
         ARKitParams.EYE_SQUINT_LEFT to 0.5
@@ -210,7 +209,7 @@ val amusement = defineGesture("amusement") {
         BasicParams.EXPR_SAD to 0.1
         BasicParams.SMILE_CLOSED to 0.7
     }
-    frame(1.5, 2.0) {
+    frame(2.5, 2.9) {
         ARKitParams.BROW_OUTER_UP_LEFT to 1.0
         ARKitParams.BROW_OUTER_UP_RIGHT to 1.0
         ARKitParams.EYE_SQUINT_LEFT to 0.8
@@ -221,7 +220,7 @@ val amusement = defineGesture("amusement") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    reset(2.0)
+    reset(2.9)
 }
 
 
@@ -294,7 +293,7 @@ val thumbsup = defineGesture("thumbsup") {
 }
 
 val annoyance = defineGesture("annoyance") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.7) {
         ARKitParams.BROW_INNER_UP to 0.3
         ARKitParams.BROW_OUTER_UP_LEFT to 0.3
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.3
@@ -302,7 +301,7 @@ val annoyance = defineGesture("annoyance") {
         BasicParams.EXPR_DISGUST to 0.4
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(0.5, 1.0) {
+    frame(0.7, 1.3) {
         ARKitParams.BROW_INNER_UP to 0.7
         ARKitParams.BROW_OUTER_UP_LEFT to 0.7
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.7
@@ -310,7 +309,7 @@ val annoyance = defineGesture("annoyance") {
         BasicParams.EXPR_DISGUST to 0.6
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(1.0, 1.9) {
+    frame(1.3, 2.1) {
         ARKitParams.BROW_INNER_UP to 1.0
         ARKitParams.BROW_OUTER_UP_LEFT to 1.0
         ARKitParams.BROW_OUTER_UP_RIGHT to 1.0
@@ -318,11 +317,11 @@ val annoyance = defineGesture("annoyance") {
         BasicParams.EXPR_DISGUST to 0.8
         BasicParams.EXPR_SAD to 0.1
     }
-    reset(1.9)
+    reset(2.1)
 }
 
 val approval = defineGesture("approval") {
-    frame(0.0, 0.5) {
+    frame(0.0, 0.7) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.7
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.7
         ARKitParams.MOUTH_SMILE_LEFT to 0.4
@@ -335,7 +334,7 @@ val approval = defineGesture("approval") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(0.5, 1.0) {
+    frame(0.7, 1.5) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.5
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
         ARKitParams.MOUTH_SMILE_LEFT to 0.6
@@ -348,7 +347,7 @@ val approval = defineGesture("approval") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    frame(1.0, 1.5) {
+    frame(1.5, 2.4) {
         ARKitParams.BROW_OUTER_UP_LEFT to 0.2
         ARKitParams.BROW_OUTER_UP_RIGHT to 0.2
         ARKitParams.MOUTH_SMILE_LEFT to 0.8
@@ -361,7 +360,7 @@ val approval = defineGesture("approval") {
         BasicParams.EXPR_FEAR to 0.1
         BasicParams.EXPR_SAD to 0.1
     }
-    reset(1.5)
+    reset(2.4)
 }
 
 val curiosity = defineGesture("curiosity") {
@@ -1177,12 +1176,36 @@ fun theparser(response: Rvalue): State = state {
 //        val response2=  response.replace(regex, "   ^")
         var cu="confusion"
         val gestureMap = mapOf(
+            "admiration" to admiration,
+            "amusement" to amusement,
+            "anger" to Gestures.ExpressAnger,
+            "annoyance" to annoyance,
+            "approval" to approval,
             "caring" to caring,
-            "confusion" to confusion
-            // Add more mappings for other Gesture variables
+            "confusion" to confusion,
+            "curiosity" to curiosity,
+            "desire" to desire,
+            "disappointment" to disappointment,
+            "disapproval" to disapproval,
+            "disgust" to disgust,
+            "embarrassment" to embarrassment,
+            "excitement" to excitement,
+            "fear" to Gestures.ExpressFear,
+            "gratitude" to gratitude,
+            "grief" to grief,
+            "joy" to joy,
+            "love" to love,
+            "nervousness" to nervousness,
+            "optimism" to optimism,
+            "pride" to pride,
+            "realization" to realization,
+            "relief" to relief,
+            "remorse" to remorse,
+            "sadness" to sadness,
+            "surprise" to surprise,
+            "neutral" to neutral
         )
-
-        var su = "confusion"
+        var su = response.stringArray[0].trim()
         val defaultGesture: Gesture = caring
         val gesture: Gesture = gestureMap[su] ?: defaultGesture
         furhat.gesture(gesture, async = true)
@@ -1193,6 +1216,13 @@ fun theparser(response: Rvalue): State = state {
             println(item)
         }
         furhat.say(speechres)
+        if(response.stringArray.size>1){
+            var su =response.stringArray[1].trim()
+            println("SEcond emoji: "+su)
+            val defaultGesture: Gesture = caring
+            val gesture: Gesture = gestureMap[su] ?: defaultGesture
+            furhat.gesture(gesture, async = true)
+        }
 //        if (splitResponse[res].trim().isNotEmpty()) {
 //            furhat.say(splitResponse[res].trim())
 //        }
@@ -1202,10 +1232,11 @@ fun theparser(response: Rvalue): State = state {
 ////                call(textgesture(code))
 //            }
             res+=1
-//            if (splitResponse[res].trim().isNotEmpty()) {
-//                furhat.say(splitResponse[res].trim())
-//            }
-        }
-//        terminate()
+////            if (splitResponse[res].trim().isNotEmpty()) {
+////                furhat.say(splitResponse[res].trim())
+////            }
+
+        terminate()
     }
-//}
+
+}
