@@ -1,17 +1,21 @@
-caring, love
-neutral
-caring
-admiration
-curiosity, realization
-neutral
-curiosity
-optimism
-approval
-anger
-neutral
+amusement
 annoyance
-disappointment
 neutral
 admiration
+joy, surprise
 neutral
+neutral
+admiration, gratitude
+realization
+joy
 approval
+approval
+amusement
+approval
+sadness
+realization
+caring, excitement
+neutral
+disapproval
+annoyance
+admiration

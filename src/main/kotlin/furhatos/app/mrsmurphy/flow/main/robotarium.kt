@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter
 
 
 var firstEntry = true
-val Robotarium: State = state(Parent) {
+val     Robotarium: State = state(Parent) {
     var response=""
     onEntry {
         if(firstEntry){
@@ -58,16 +58,10 @@ val Robotarium: State = state(Parent) {
     }
     onNoResponse {
         furhat.ledStrip.solid(java.awt.Color(127,0,0))
-//        UtilsLib.randomNoRepeat(
-//            {furhat.say("Would you like to learn some interesting facts about robotics or National Robotarium?")
-//                call(AskQuestion())},
-//            {furhat.say("Hey ... can i entertain you with some facts related to robotics")
-//                call(AskQuestion())},
-//            {furhat.say("Hey ... can i entertain you with some facts about to robotics")
-//                call(AskQuestion())},
-//            {},{},{},{},{},{},{},{},{},{}
-//        )
+        var replygpt= getNLGResponseFromGPT((response))
+        call(theparser(replygpt))
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
-        furhat.listen(10000)
+        furhat.listen()
+        furhat.ask("dsds")
     }
 }
