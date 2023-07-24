@@ -4,15 +4,14 @@ package furhatos.app.mrsmurphy.flow.main
 import com.theokanning.openai.service.OpenAiService
 import com.theokanning.openai.completion.CompletionRequest
 import furhatos.flow.kotlin.*
-import gesturecall
-import java.io.File
-import java.io.Serializable
 
 data class Rvalue(val stringValue: String, val stringArray: Array<String>)
 
-val serviceKey = "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"
+val serviceKey = "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"
 
-fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
+
+
+fun getNLGResponseFromGPT(histval: Int = 8): Rvalue {
 
     val service = OpenAiService(serviceKey)
     val history = Furhat.dialogHistory.all.takeLast(histval).mapNotNull {
@@ -28,17 +27,6 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
     }.joinToString(separator = "\n")
 
 
-    //Formal prompt
-    /*
-        var conversationInput= "The following is a conversation with an AI assistant. The assistants name is Murphy who is serious and informative. Murphy works as a receptionist in a building called the National Robotarium. Murphy has to talk to Visitor.Murphy has to talk to Visitor.If the Visitor ask only then give additional information.\n"
-        if (input.trim().isNotEmpty()) {
-            conversationInput += "Here are some additional information which may be used if required :\n"
-            conversationInput += input
-        }
-        conversationInput+= "\n Here are the past conversations between Murphy and Visitor :\n"
-        conversationInput+=history
-        conversationInput+="\n Murphy should now produce a formal response. Response should be no longer than 3 sentences and murphy is not required to greet Visitor and murphy should try to summarise whatever it says.Dont try to repeat what was told in previous conversations. Also if the question is asked out of the context, Murphy should ask the user to confirm the visitor's question which is most related to the information given above in a very formal way. Do not attempt to fabricate or hallucinate any answers. Murphy: ?"
-    */
 
 
     //Informal prompt
@@ -112,7 +100,8 @@ fun getNLGResponseFromGPT(input: String, histval: Int = 10): Rvalue {
 
 var outputfile=""
     var i=0;
-    trainemotion+=response.drop(lengthofprompt)
+    var temptrain=trainemotion
+    temptrain+=response.drop(lengthofprompt)
 //    try {
 //        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
 //            lines.forEach { line ->
@@ -161,19 +150,38 @@ var outputfile=""
                     .frequencyPenalty(frequencyPenalty)
                     .presencePenalty(presencePenalty)
                     .maxTokens(maxTokens)
-                    .prompt(trainemotion)
+                    .prompt(temptrain)
                     .echo(true)
                     .build();
     val completion = service.createCompletion(completionRequest).choices.first().text
     var emot = completion.trim()
     emot= getLastLine(emot)
     println(emot)
+
+
+
+
 //   var num= compareTextFiles("outtest.txt","realvalue.txt")
 //    println("The total score is "+ num)
     var res=response.drop(lengthofprompt+1)
     println(response.drop(lengthofprompt+1))
     val emoj = emot.split(",").toTypedArray()
     return Rvalue(res, emoj)
+}
+
+fun logtext(): String{
+    val log = Furhat.dialogHistory.all.takeLast(100).mapNotNull {
+        when (it) {
+            is DialogHistory.ResponseItem -> {
+                "Human: ${it.response.text}"
+            }
+            is DialogHistory.UtteranceItem -> {
+                "AI: ${it.toText()}"
+            }
+            else -> null
+        }
+    }.joinToString(separator = "\n")
+    return log
 }
 
 

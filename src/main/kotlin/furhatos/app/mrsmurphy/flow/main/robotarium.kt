@@ -3,19 +3,14 @@ package furhatos.app.mrsmurphy.flow.main
 import furhat.libraries.standard.UtilsLib
 import furhatos.app.mrsmurphy.flow.Parent
 import furhatos.app.mrsmurphy.flow.nlu.*
-import furhatos.app.mrsmurphy.flow.trivia.AskQuestion
 import furhatos.flow.kotlin.*
-import furhatos.nlu.EnumEntity
-import furhatos.nlu.common.DontKnow
 import theparser
-import java.time.LocalDateTime
+import java.io.File
 import java.time.LocalTime
-import java.time.format.DateTimeFormatter
 
 
 var firstEntry = true
 val     Robotarium: State = state(Parent) {
-    var response=""
     onEntry {
         if(firstEntry){
             furhat.ledStrip.solid(java.awt.Color(127,0,0))
@@ -49,19 +44,55 @@ val     Robotarium: State = state(Parent) {
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
         furhat.listen()
     }
+
+    onResponse<Endbye> {
+        furhat.ledStrip.solid(java.awt.Color(127,0,0))
+        var log= logtext()
+        val baseFileName = "Log-of-1-"
+        val directory = "C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\log" // Replace this with the directory path.
+
+        savefile(baseFileName, log, directory)
+        goto(Idle)
+
+    }
+
+
+
     onResponse {
         furhat.ledStrip.solid(java.awt.Color(127,0,0))
-        var replygpt= getNLGResponseFromGPT((response))
+        var replygpt= getNLGResponseFromGPT()
         call(theparser(replygpt))
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
         furhat.listen()
     }
     onNoResponse {
         furhat.ledStrip.solid(java.awt.Color(127,0,0))
-        var replygpt= getNLGResponseFromGPT((response))
-        call(theparser(replygpt))
+        UtilsLib.randomNoRepeat(
+            {furhat.say("Hey .... You can talk to me .... you know") },
+            {furhat.say("Hey ... I am knowledge enough to answer your questions") },
+            {furhat.say("Hey ... can you please raise your voice a bit so I can answer your questions") },
+            {furhat.say()},
+            {},{},{},{},{},{},{},{},{}
+        )
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
-        furhat.listen()
-        furhat.ask("dsds")
+        furhat.listen(10000)
     }
+}
+fun savefile(baseFileName: String, content: String, directory: String) {
+    var fileName = baseFileName
+    var fileNumber = 0
+
+    // Check if the file with the current name already exists
+    while (File("$directory/$fileName.txt").exists()) {
+        fileNumber++
+        fileName = "$baseFileName$fileNumber"
+    }
+
+    // Append the incremented number to the base file name
+    val file = File("$directory/$fileName.txt")
+
+    // Save the text content to the file
+    file.writeText(content)
+
+    println("File saved as: ${file.absolutePath}")
 }

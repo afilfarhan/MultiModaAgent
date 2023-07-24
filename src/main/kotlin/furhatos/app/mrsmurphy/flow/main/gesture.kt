@@ -1152,6 +1152,7 @@ val neutral = defineGesture("neutral") {
         BasicParams.EXPR_DISGUST to 0.0
         BasicParams.EXPR_FEAR to 0.0
         BasicParams.EXPR_SAD to 0.0
+
     }
     reset(2.5)
 }
