@@ -15,6 +15,7 @@ val     Robotarium: State = state(Parent) {
         if(firstEntry){
             furhat.ledStrip.solid(java.awt.Color(127,0,0))
             UtilsLib.randomNoRepeat(
+
                 { furhat.say("Hi") },
                 { furhat.say("hello") },
                 { furhat.say("Hello there!") },
@@ -24,7 +25,9 @@ val     Robotarium: State = state(Parent) {
                         in 12..17 -> "Good afternoon!"
                         else -> "Good evening!"
                     }
+
                     furhat.say(greeting)
+                    furhat.say("GESTURE_COUGH_3")
                 })
 
             furhat.listen()
@@ -71,7 +74,7 @@ val     Robotarium: State = state(Parent) {
             {furhat.say("Hey .... You can talk to me .... you know") },
             {furhat.say("Hey ... I am knowledge enough to answer your questions") },
             {furhat.say("Hey ... can you please raise your voice a bit so I can answer your questions") },
-            {furhat.say()},
+            {furhat.say("")},
             {},{},{},{},{},{},{},{},{}
         )
         furhat.ledStrip.solid(java.awt.Color(0,127,0))
