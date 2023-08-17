@@ -1207,6 +1207,7 @@ fun theparser(response: Rvalue): State = state {
             "neutral" to neutral
         )
         var su = response.stringArray[0].trim()
+
         val defaultGesture: Gesture = caring
         val gesture: Gesture = gestureMap[su] ?: defaultGesture
         furhat.gesture(gesture, async = true)

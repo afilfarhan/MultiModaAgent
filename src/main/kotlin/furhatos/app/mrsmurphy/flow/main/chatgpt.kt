@@ -5,13 +5,14 @@ import com.theokanning.openai.service.OpenAiService
 import com.theokanning.openai.completion.CompletionRequest
 import furhatos.flow.kotlin.*
 
+
 data class Rvalue(val stringValue: String, val stringArray: Array<String>)
 
-val serviceKey = "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"
+val serviceKey = "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"
 
+var gesturelog=""
 
-
-fun getNLGResponseFromGPT(histval: Int = 8): Rvalue {
+fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
 
     val service = OpenAiService(serviceKey)
     val history = Furhat.dialogHistory.all.takeLast(histval).mapNotNull {
@@ -94,8 +95,33 @@ fun getNLGResponseFromGPT(histval: Int = 8): Rvalue {
             "remorse\n" +
             "sadness\n" +
             "surprise\n" +
-            "neutral\n"+
-            "each of the above label represent emotions expressed by human beings\ngive the appropriate label or labels to the below sentence\n"
+            "neutral\nIf you're in the Bay Area check out Flying Over Walls.\tamusement\n" +
+            "Would you rather I hadn't posted this article? Don't want to talk about it?\tanger, confusion\n" +
+            "This one tilted concrete square in my neighborhood that I keep tripping over.\tanger, annoyance\n" +
+            "yes, agreed. \tapproval\n" +
+            "Dude, I'll be your friend any time\tcaring\n" +
+            "Why would they lie?\tconfusion\n" +
+            "Does anyone have a link to the rainbow song clip? I tried looking everywhere and can't find it\tcuriosity, sadness\n" +
+            "That was the middle school dream\tdesire\n" +
+            "Yeah being up by 20 every game does that unfortunately\tdisappointment, sadness\n" +
+            "Just feels rude I guess\tdisapproval\n" +
+            "I'm always paranoid of people following me when I am driving home. I would have pooed my pants yikes.\tdisgust, fear\n" +
+            "It was less painful than a bee sting! I felt so silly afterwards!\tembarrassment\n" +
+            "What a combo of food\texcitement\n" +
+            "This is a terrible idea\tfear\n" +
+            "This is all soooo nice. What nice people.\tgratitude\n" +
+            "Sorry for your loss; this story is heartwarming.\tgrief, sadness\n" +
+            "Happy to help\tjoy\n" +
+            "I like in Iowa. The weather part is true\tapproval, love\n" +
+            "Is there something I'm missing here? I don't see the pun.\tnervousness\n" +
+            "It sounds like you'd have a great time with Final Fantasy XIV.\toptimism\n" +
+            "Proud of you!\tpride\n" +
+            "I can see why! I would totally be offended too!\trealization\n" +
+            "Afraid not. I was just given a different perspective.\trelief\n" +
+            "My comment provided shame. I am nothing.\tembarrassment, remorse\n" +
+            "Agreed. But considering their poor cars were carrying 1200+ lbs of weight, that might slow things down lol\tamusement, sadness\n" +
+            "Oh man, are we actually getting a real Ghostbusters sequel?\tcuriosity, surprise\n" +
+            "Thought I saw a shot glass in there the first time I watched this.\tneutral\n"
 
 
 var outputfile=""
@@ -145,7 +171,7 @@ var outputfile=""
 
                     completionRequest = CompletionRequest.builder()
                     .model("text-davinci-003")
-                    .temperature(0.8)
+                    .temperature(0.7)
                     .topP(topP)
                     .frequencyPenalty(frequencyPenalty)
                     .presencePenalty(presencePenalty)
@@ -155,7 +181,7 @@ var outputfile=""
                     .build();
     val completion = service.createCompletion(completionRequest).choices.first().text
     var emot = completion.trim()
-    emot= getLastLine(emot)
+    emot= emot.drop(temptrain.length)
     println(emot)
 
 
@@ -166,11 +192,14 @@ var outputfile=""
     var res=response.drop(lengthofprompt+1)
     println(response.drop(lengthofprompt+1))
     val emoj = emot.split(",").toTypedArray()
+    for (i in emoj) {
+        gesturelog += i+"\n"
+    }
     return Rvalue(res, emoj)
 }
 
 fun logtext(): String{
-    val log = Furhat.dialogHistory.all.takeLast(100).mapNotNull {
+    val log = Furhat.dialogHistory.all.takeLast(500).mapNotNull {
         when (it) {
             is DialogHistory.ResponseItem -> {
                 "Human: ${it.response.text}"
@@ -181,7 +210,7 @@ fun logtext(): String{
             else -> null
         }
     }.joinToString(separator = "\n")
-    return log
+    return log+"\n"+gesturelog
 }
 
 
