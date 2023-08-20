@@ -1,5 +1,5 @@
 # Skill
-System B, prompt with Few-shot learning
+System A, prompt with prompt Engineered
 
 # Requirements
 Furhat SDK should be installed from (https://furhat.io/)
