@@ -1,21 +1,21 @@
+curiosity
+neutral
+neutral
+gratitude
 amusement
-annoyance
+disgust
+curiosity
+disappointment, sadness
 neutral
-admiration
-joy, surprise
-neutral
-neutral
-admiration, gratitude
-realization
+curiosity, excitement
 joy
-approval
-approval
-amusement
-approval
-sadness
-realization
-caring, excitement
+caring
 neutral
-disapproval
+approval, gratitude
+realization
+anger, annoyance
+neutral
 annoyance
-admiration
+neutral
+confusion
+remorse, sadness

@@ -4,7 +4,7 @@ import furhatos.app.mrsmurphy.flow.main.Idle
 import furhatos.flow.kotlin.*
 
 val Parent: State = state {
-
+    //setting used for the non-virtual Furhat robot
     onUserEnter(instant = true) {
         when { // "it" is the user that entered
             furhat.isAttendingUser -> furhat.glance(it) // Glance at new users entering

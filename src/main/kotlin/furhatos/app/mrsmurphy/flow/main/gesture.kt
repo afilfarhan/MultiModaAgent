@@ -4,7 +4,7 @@ import furhatos.flow.kotlin.furhat
 import furhatos.gestures.*
 
 
-
+//creation of the gestures
 val confusion = defineGesture("confusion") {
     frame(0.0, 0.9) {
         ARKitParams.BROW_INNER_UP to -1.5
@@ -14,11 +14,6 @@ val confusion = defineGesture("confusion") {
         ARKitParams.EYE_SQUINT_RIGHT to 0.8
         ARKitParams.EYE_BLINK_RIGHT to 0.2
         ARKitParams.EYE_BLINK_LEFT to 0.2
-//        ARKitParams.EYE_LOOK_UP_LEFT to 0.1
-//        ARKitParams.EYE_LOOK_UP_RIGHT to 0.1
-//        ARKitParams.MOUTH_STRETCH_LEFT to -1.0
-//        ARKitParams.MOUTH_STRETCH_RIGHT to -1.0
-//        ARKitParams.MOUTH_PUCKER to 1.0
         ARKitParams.MOUTH_CLOSE to -0.2
     }
     frame(0.9, 1.7) {
@@ -40,9 +35,6 @@ val confusion = defineGesture("confusion") {
         ARKitParams.BROW_DOWN_RIGHT to 0.7
         ARKitParams.EYE_SQUINT_LEFT to 0.5
         ARKitParams.EYE_SQUINT_RIGHT to 0.5
-//        ARKitParams.MOUTH_STRETCH_LEFT to 0
-//        ARKitParams.MOUTH_STRETCH_RIGHT to 0
-//        ARKitParams.MOUTH_PUCKER to 0
         ARKitParams.MOUTH_CLOSE to 0
         BasicParams.EXPR_ANGER to 0.0
         BasicParams.EXPR_DISGUST to 0.0
@@ -243,54 +235,7 @@ val thinker = defineGesture("thinker") {
     }
     reset(2.0)
 }
-val thumbsdown = defineGesture("thumbsdown") {
-    frame(0.1, 1.5) {
-        BasicParams.NECK_TILT to 1
-        ARKitParams.BROW_OUTER_UP_LEFT to 0.7
-        ARKitParams.BROW_OUTER_UP_RIGHT to 0.7
-        ARKitParams.EYE_LOOK_DOWN_LEFT to 0.7
-        ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.7
-    }
-    frame(0.8, 1.2) {
-        BasicParams.NECK_PAN to 10
-    }
-    frame(1.2, 1.6) {
-        BasicParams.NECK_PAN to -10
-    }
-    frame(1.6, 2.0) {
-        BasicParams.NECK_PAN to 2
-    }
-    frame(2.0, 2.4) {
-        BasicParams.NECK_TILT to 0
-        ARKitParams.BROW_OUTER_UP_LEFT to 0.5
-        ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
-        ARKitParams.EYE_LOOK_DOWN_LEFT to 0.2
-        ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.2
 
-    }
-    reset(2.4)
-}
-val thumbsup = defineGesture("thumbsup") {
-    frame(0.1, 1.5) {
-        BasicParams.NECK_TILT to 10
-        ARKitParams.BROW_OUTER_UP_LEFT to 0.7
-        ARKitParams.BROW_OUTER_UP_RIGHT to 0.7
-        ARKitParams.EYE_LOOK_DOWN_LEFT to 0.7
-        ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.7
-    }
-    frame(1.0, 1.5) {
-        BasicParams.NECK_TILT to 0
-    }
-    frame(1.5, 2.0) {
-        BasicParams.NECK_TILT to 5
-        ARKitParams.BROW_OUTER_UP_LEFT to 0.5
-        ARKitParams.BROW_OUTER_UP_RIGHT to 0.5
-        ARKitParams.EYE_LOOK_DOWN_LEFT to 0.2
-        ARKitParams.EYE_LOOK_DOWN_RIGHT to 0.2
-
-    }
-    reset(2.0)
-}
 
 val annoyance = defineGesture("annoyance") {
     frame(0.0, 0.7) {
@@ -1158,24 +1103,15 @@ val neutral = defineGesture("neutral") {
 }
 
 
-fun gesturecall(code: String): State = state {
-
-
-        print("gesture is called")
-
-}
-
 
 fun theparser(response: Rvalue): State = state {
     onEntry {
-        // println("inupe value to the funtion:"+response)
-//        val rmv = Regex("Murphy:|Gesture:")
-//        val regex = Regex(":\\w+:")
-        var speechres=response.stringValue
-//        val emojis = regex.findAll(response).map { it.value }.toList()
-        // println("full list of emojis found"+emojis)
-//        val response2=  response.replace(regex, "   ^")
-        var cu="confusion"
+
+        // Extract the speech response from the input Rvalue
+        var speechres = response.stringValue
+        var cu = "confusion" // Default emotion
+
+        // Define a map that maps emotion strings to corresponding gesture actions
         val gestureMap = mapOf(
             "admiration" to admiration,
             "amusement" to amusement,
@@ -1206,39 +1142,38 @@ fun theparser(response: Rvalue): State = state {
             "surprise" to surprise,
             "neutral" to neutral
         )
+
+        // Extract the first emotion from the input response
         var su = response.stringArray[0].trim()
 
+        // Define default gesture and select the corresponding gesture from the map based on the extracted emotion
         val defaultGesture: Gesture = caring
         val gesture: Gesture = gestureMap[su] ?: defaultGesture
         furhat.gesture(gesture, async = true)
 
-//        val splitResponse = response2.split("^")
-        var res = 0
+        var res = 0 // Counter variable
+
+        // Iterate through the stringArray in the response (print items for debugging)
         for(item in response.stringArray){
             println(item)
         }
+
+        // Make Furhat say the extracted speech response
         furhat.say(speechres)
+
+        // Check if there's a second emotion in the response
         if(response.stringArray.size>1){
-            var su =response.stringArray[1].trim()
-            println("SEcond emoji: "+su)
+            var su =response.stringArray[1].trim() // Extract the second emotion
+
+            // Define default gesture and select the corresponding gesture from the map based on the second emotion
             val defaultGesture: Gesture = caring
             val gesture: Gesture = gestureMap[su] ?: defaultGesture
             furhat.gesture(gesture, async = true)
         }
-//        if (splitResponse[res].trim().isNotEmpty()) {
-//            furhat.say(splitResponse[res].trim())
-//        }
-//        for (emo in emojis) {
-//            if(emo.isNotEmpty()){
-//                val code = emo
-////                call(textgesture(code))
-//            }
-            res+=1
-////            if (splitResponse[res].trim().isNotEmpty()) {
-////                furhat.say(splitResponse[res].trim())
-////            }
 
-        terminate()
+            res+=1  // Increment the counter
+
+        terminate()   // Terminate the state
     }
 
 }

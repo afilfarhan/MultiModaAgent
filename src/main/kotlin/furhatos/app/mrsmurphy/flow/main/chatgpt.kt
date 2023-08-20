@@ -4,16 +4,21 @@ package furhatos.app.mrsmurphy.flow.main
 import com.theokanning.openai.service.OpenAiService
 import com.theokanning.openai.completion.CompletionRequest
 import furhatos.flow.kotlin.*
+import java.io.File
 
-
+// create custom data type to match the requirements
 data class Rvalue(val stringValue: String, val stringArray: Array<String>)
 
-val serviceKey = "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"
+// secret key provided by LLM provider
+//this is required to access the model
+val serviceKey = ""
 
 var gesturelog=""
 
+//Extracting history of conversation
 fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
 
+    //initiating API to communicate the large language model
     val service = OpenAiService(serviceKey)
     val history = Furhat.dialogHistory.all.takeLast(histval).mapNotNull {
         when (it) {
@@ -38,8 +43,10 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
 //    print(history)
 
     var response = ""
+
+    //calculating length of the prompt
     val lengthofprompt = conversationInput.length
-    // Read more about these settings: https://beta.openai.com/docs/introduction
+
     var temperature = 0.7 // Higher values means the model will take more risks. Try 0.9 for more creative applications, and 0 (argmax sampling) for ones with a well-defined answer.
     var maxTokens =  100// Length of output generated. 1 token is on average ~4 characters or 0.75 words for English text
     var topP = 0.6 // 1.0 is default. An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.
@@ -58,6 +65,8 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
 
 
     try {
+
+        //completing request and storing the response in response variable
         val completion = service.createCompletion(completionRequest).choices.first().text
         response = completion.trim()
 
@@ -66,8 +75,8 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
         response="Unfortunately I am unable to connect to OpenAI services.Can you please repeat the question again?"
         return Rvalue(response, arrayOf())
     }
-    //println(response)
-//    println("-------------------------------------------------")
+
+    //Few-shot learning Prompt
     var trainemotion="admiration\n" +
             "amusement\n" +
             "anger\n" +
@@ -126,8 +135,10 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
 
 var outputfile=""
     var i=0;
+
+    //Few-shot learning prompt is stored here
     var temptrain=trainemotion
-    temptrain+=response.drop(lengthofprompt)
+   temptrain+=response.drop(lengthofprompt)
 //    try {
 //        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
 //            lines.forEach { line ->
@@ -179,6 +190,8 @@ var outputfile=""
                     .prompt(temptrain)
                     .echo(true)
                     .build();
+
+    //getting the gesture label for the response
     val completion = service.createCompletion(completionRequest).choices.first().text
     var emot = completion.trim()
     emot= emot.drop(temptrain.length)
@@ -189,15 +202,22 @@ var outputfile=""
 
 //   var num= compareTextFiles("outtest.txt","realvalue.txt")
 //    println("The total score is "+ num)
+
+    //trimming the response string and emotion string to get only required
     var res=response.drop(lengthofprompt+1)
     println(response.drop(lengthofprompt+1))
     val emoj = emot.split(",").toTypedArray()
+
+    //storing the emojis in an array
     for (i in emoj) {
         gesturelog += i+"\n"
     }
+
+
     return Rvalue(res, emoj)
 }
 
+//function to store log files
 fun logtext(): String{
     val log = Furhat.dialogHistory.all.takeLast(500).mapNotNull {
         when (it) {
@@ -210,7 +230,7 @@ fun logtext(): String{
             else -> null
         }
     }.joinToString(separator = "\n")
-    return log+"\n"+gesturelog
+    return log+"\n\n"+gesturelog
 }
 
 
