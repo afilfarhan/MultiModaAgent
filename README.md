@@ -1,7 +1,11 @@
 # Skill
-System B, prompt with Few-shot learning
+Testing of accuracy for System A, prompt with prompt Engineered
 
 # Requirements
+
+In the test.txt file put the sentences to test for accuracy, in realvalue.txt put the labels corresponding to the sentence in test.txt
+
+
 Furhat SDK should be installed from (https://furhat.io/)
 
 Secret key from OpenAI is required, this key should be present in **_serviceKey_** variable in chatpgt.kt file
