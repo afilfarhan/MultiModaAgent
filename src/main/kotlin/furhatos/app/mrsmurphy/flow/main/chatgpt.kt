@@ -139,46 +139,46 @@ var outputfile=""
     //Few-shot learning prompt is stored here
     var temptrain=trainemotion
    temptrain+=response.drop(lengthofprompt)
-//    try {
-//        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
-//            lines.forEach { line ->
-//                var temp=trainemotion
-//                temp+=line
-////                println(temp)
-//                completionRequest = CompletionRequest.builder()
-//                    .model("text-davinci-003")
-//                    .temperature(0.9)
-//                    .topP(topP)
-//                    .frequencyPenalty(frequencyPenalty)
-//                    .presencePenalty(presencePenalty)
-//                    .maxTokens(maxTokens)
-//                    .prompt(temp)
-//                    .echo(true)
-//                    .build();
-//                val completion = service.createCompletion(completionRequest).choices.first().text
-//                var emot = completion.trim()
-//                if(i==0){
-//                outputfile+= getLastLine(emot) +"\n"
-//                println(getLastLine(emot))
-//                i++}
-//                else{
-//                    outputfile+= getLastLine(emot) +"\n"
-//                    println(getLastLine(emot))}
-//
-//            }
-//        }
-//    } catch (e: Exception) {
-//        println("Error reading the file: ${e.message}")
-//    }
-//    try {
-//        File("outtest.txt").bufferedWriter().use { writer ->
-//            writer.flush()
-//            writer.write(outputfile)
-//            writer.close()
-//        }
-//    } catch (e: Exception) {
-//        println("Error writing the file: ${e.message}")
-//    }
+    try {
+        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
+            lines.forEach { line ->
+                var temp=trainemotion
+                temp+=line
+//                println(temp)
+                completionRequest = CompletionRequest.builder()
+                    .model("text-davinci-003")
+                    .temperature(0.9)
+                    .topP(topP)
+                    .frequencyPenalty(frequencyPenalty)
+                    .presencePenalty(presencePenalty)
+                    .maxTokens(maxTokens)
+                    .prompt(temp)
+                    .echo(true)
+                    .build();
+                val completion = service.createCompletion(completionRequest).choices.first().text
+                var emot = completion.trim()
+                if(i==0){
+                outputfile+= getLastLine(emot) +"\n"
+                println(getLastLine(emot))
+                i++}
+                else{
+                    outputfile+= getLastLine(emot) +"\n"
+                    println(getLastLine(emot))}
+
+            }
+        }
+    } catch (e: Exception) {
+        println("Error reading the file: ${e.message}")
+    }
+    try {
+        File("outtest.txt").bufferedWriter().use { writer ->
+            writer.flush()
+            writer.write(outputfile)
+            writer.close()
+        }
+    } catch (e: Exception) {
+        println("Error writing the file: ${e.message}")
+    }
 
                     completionRequest = CompletionRequest.builder()
                     .model("text-davinci-003")
@@ -200,8 +200,8 @@ var outputfile=""
 
 
 
-//   var num= compareTextFiles("outtest.txt","realvalue.txt")
-//    println("The total score is "+ num)
+   var num= compareTextFiles("outtest.txt","realvalue.txt")
+    println("The total score is "+ num)
 
     //trimming the response string and emotion string to get only required
     var res=response.drop(lengthofprompt+1)
