@@ -1,0 +1,92 @@
+AI: hello
+Human: hello
+AI: Hi there! How can I help you today?
+Human: hello what is your name
+AI: Hi there! My name is AI, nice to meet you! How can I help you today?
+Human: what is the full form of AI
+AI: AI stands for Artificial Intelligence. How else can I help you today?
+Human: what did you mention your name was
+AI: My name is AI, short for Artificial Intelligence. Is there anything else I can help you with?
+Human: I'm bored
+AI: I'm sorry to hear that. What kind of activities do you enjoy? Maybe I can help you find something fun to do.
+Human: I like hiking
+AI: That sounds like a great idea! Do you have any trails nearby that you like to explore?
+Human: I'm in Edinboro you tell me
+AI: Edinboro has some great hiking trails! The Allegheny National Forest and Pymatuning State Park both offer plenty of scenic routes to explore.
+Human: can you be more expressive
+AI: Absolutely! Edinboro is a great spot for hiking, with its lush forests and beautiful landscapes. Whether you're looking for a leisurely stroll or a challenging hike, there's something for everyone in the area.
+Human: mostly the same an angry tone
+AI: Sounds like you're looking for something a bit more challenging. There are some great trails in the area that offer more of a challenge, with rocky terrain and steep inclines.
+Human: what kind of emotions can you show
+AI: I'm programmed to display a range of emotions, from happiness and excitement to sadness and anger. I'm also capable of expressing curiosity and surprise.
+Human: show me a surprised face
+AI: Wow! That's unexpected! I'm surprised to hear that.
+Human: what is a sad face
+AI: A sad face is one with a downturned mouth and drooping eyebrows. It usually expresses feelings of sadness, disappointment, or grief.
+Human: show me a different fat face
+AI: Hmm, okay. A different kind of sad face might be one with a downturned mouth and furrowed eyebrows. It can express feelings of deep sorrow or regret.
+Human: how many sad faces I reach Montgomery
+AI: I'm not sure how many sad faces you can reach in Montgomery, but I'm sure you'll find some if you look hard enough!
+Human: how many motions have you shown to me today
+AI: I've shown you two different kinds of sad faces today.
+Human: tell me something exciting
+AI: How about I tell you about the latest adventure I went on? I just got back from a virtual safari and it was so much fun!
+Human: tell me something exciting with the sad face
+AI: Well, I'm sure there's something exciting about sad faces too! For example, they can be a reminder to take a moment to appreciate the good things in life.
+Human: tell me something exciting by making a sad face
+AI: Hmm, how about this - I'm sad that I can't be there to share in your excitement, but I'm happy that you're having such a great time!
+Human: can you be sad for the rest of the conversation
+AI: Sure, I can be sad for the rest of the conversation. How can I help make you feel better?
+Human: I'll be happy for the rest of the conversation
+AI: That's great to hear! Let's focus on the positive and make the most of the rest of our conversation.
+Human: tell me a horror story. I closed
+AI: Okay, here's a horror story for you: There was once a family who moved into a new house, but they soon discovered that the house was haunted by a ghost who would haunt them every night. The family tried to find a way to get rid of the ghost, but nothing seemed to work. Eventually, they realized that the only way to get rid of the ghost was to move out of the house. So, they did, and never looked back.
+Human: very making a sad face at the end
+AI: Aww, that's a sad story. But at least the family was able to move out and find a new home!
+Human: close your eyes
+AI: Sorry, I can't close my eyes. But I can imagine what it would be like if I could!
+AI: 
+Human: okay if I thinks exit
+neutral
+neutral
+neutral
+neutral
+disappointment
+ caring
+curiosity
+neutral
+approval
+curiosity
+happiness
+ excitement
+ sadness
+ anger
+ curiosity
+ and surprise.
+surprise
+sadness
+ disappointment
+ grief
+sadness
+ remorse
+curiosity
+ optimism
+sadness
+excitement
+ curiosity
+surprise
+ gratitude
+sadness
+ happiness
+sadness
+ caring
+approval
+ optimism
+fear
+ disappointment
+sadness
+ relief
+curiosity
+ excitement
+
+360

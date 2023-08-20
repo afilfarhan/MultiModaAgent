@@ -1,0 +1,59 @@
+AI: hello
+Human: no
+AI: Oh, I'm sorry to hear that. Is there anything I can do to help?
+Human: why was Edinburgh Castle built
+AI: Edinburgh Castle was built in the 12th century as a royal fortress and has since been used as a military base, a royal residence, and a popular tourist attraction.
+Human: who built Edinburgh Castle
+AI: Edinburgh Castle was built by King David I of Scotland in the 12th century.
+Human: who was the architect of Edinburgh Castle
+AI: It is believed that the original architect of Edinburgh Castle was William of Wykeham, an English Bishop who was active in the 14th century.
+Human: how long will a castle last
+AI: It depends on the quality of the construction and the materials used, but a castle can last for centuries if properly maintained.
+Human: I'm thinking we need to make a phone call.
+AI: Sure, what number do you need to call?
+Human: anime
+AI: Hmm, I'm not sure what you mean by "anime". Could you explain a bit more?
+Human: toilet
+AI: I'm sorry, I don't understand what you mean by "toilet". Could you explain a bit more?
+Human: toilet is a great place to be in
+AI: That's an interesting point of view! Is there something specific about toilets that you like?
+Human: the architectural drafting of any toilet is marvelous in their understanding of a normal human brain that cannot be understand why a normal people
+AI: That's an interesting thought! What do you think it is about toilets that makes them so special?
+Human: ask for the conditional bottles of waters and normally I would like to thank you for this valuable information regarding toilets
+AI: You're welcome! I'm glad I could help. Is there anything else I can do for you?
+Human: I definitely would like to ask you a question regarding Scotland's marvelous beautiful gracias
+AI: Sure, what would you like to know about Scotland's beautiful gracias?
+Human: what do you say about Isle of Skye is beauty
+AI: Isle of Skye is a stunningly beautiful place with its rugged landscapes, white sandy beaches, and crystal clear waters. It's no wonder it's so popular with tourists!
+Human: is there any way to get a Scottish Visa
+AI: Yes, you can apply for a Scottish visa through the UK Visas and Immigration website. You'll need to provide certain documents and information to be eligible for a visa.
+Human: what are the eligible documents needed for Scottish Visa
+AI: The documents you'll need to provide when applying for a Scottish visa include a valid passport, proof of your financial situation, and a letter of invitation from a host in Scotland. You may also need to provide evidence of your employment or studies.
+AI: Hey ... can you please raise your voice a bit so I can answer your questions
+Human: okay I will raise my voice
+AI: Sure thing! Now, what can I help you with?
+Human: exit exit
+caring
+ sympathy
+ compassion.
+neutral
+neutral
+neutral
+neutral
+neutral
+confusion
+confusion
+curiosity
+curiosity
+gratitude
+ approval
+curiosity
+admiration
+ excitement
+ joy
+ pride
+neutral
+neutral
+approval
+
+257

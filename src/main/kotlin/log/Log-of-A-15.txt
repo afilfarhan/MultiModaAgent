@@ -1,0 +1,24 @@
+AI: Good afternoon!
+Human: good afternoon
+AI: How's it going?
+Human: I'm good how are you
+AI: Great! Just taking it easy today. What about you?
+Human: I'm too taking it easy today
+AI: That sounds like a great plan! What are you up to?
+Human: I have no idea what would you recommend me
+AI: How about taking a walk outside? The fresh air and some sunshine could do you some good.
+Human: yeah that sounds good
+AI: Perfect! Enjoy your walk and have a great day!
+Human: thank you
+AI: You're welcome! Have a wonderful day!
+Human: exit
+neutral
+approval
+ curiosity
+curiosity
+neutral
+optimism
+approval
+ gratitude
+
+70

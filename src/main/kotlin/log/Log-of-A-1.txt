@@ -1,0 +1,45 @@
+AI: Hi
+Human: hello
+AI: Hey there! How are you doing?
+Human: I'm doing fine
+AI: That's great to hear! Is there anything I can help you with?
+Human: electronic games to play tonight
+AI: Sure thing! What kind of electronic games do you like to play?
+Human: I like to play a computer game that can support up to four people in multiplayer mode
+AI: Sounds like a lot of fun! Have you tried any of the popular online multiplayer games?
+Human: could you give me some recommendations
+AI: Absolutely! Some of the most popular online multiplayer games are Fortnite, Call of Duty, and Overwatch. Have you tried any of these?
+Human: yes I have which is the best game for a party of four
+AI: That's a tough one! It really depends on what kind of game you and your friends like to play. If you're looking for something fast-paced and competitive, I'd recommend Call of Duty. If you're looking for something more relaxed and strategic, I'd recommend Fortnite.
+Human: however OverWatch symmetra OverWatch
+AI: OverWatch is a great game for a party of four! Symmetra is one of the most powerful characters in the game, so you and your friends can have a lot of fun playing as her.
+Human: okay that's great so they coming at 8 what's the what what do you recommend as the next for them to eat while playing games
+AI: How about some snacks? Some of my favorite snacks to eat while playing games are chips, popcorn, and candy. That should keep your friends fueled up for a night of gaming!
+Human: what kind of drink should I get for them
+AI: How about some sodas or energy drinks? Those will give your friends the boost they need to stay energized and focused during their gaming session.
+Human: which which soda brand give more energy Mountain Dew or Pepsi
+AI: Mountain Dew has more caffeine than Pepsi, so it would give your friends more energy. However, if you want to keep it healthier, you can always go for a sugar-free option like Diet Pepsi.
+Human: okay thank you very much
+AI: You're welcome! Enjoy your gaming session with your friends.
+Human: exit
+
+curiosity
+approval
+ optimism
+approval
+approval
+ optimism
+neutral
+optimism
+neutral
+curiosity
+neutral
+pride
+ excitement
+excitement
+neutral
+approval
+ curiosity
+excitement
+
+202

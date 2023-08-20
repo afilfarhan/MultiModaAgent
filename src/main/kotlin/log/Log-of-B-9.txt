@@ -1,0 +1,35 @@
+AI: Hi
+Human: hi
+AI: How's it going?
+Human: all good
+AI: That's great to hear! What have you been up to lately?
+AI: Hey ... I am knowledge enough to answer your questions
+Human: I would like to know about the covid outbreak of 2019 could you please explain your birthday
+AI: Oh, sorry, I don't think I can answer that question. But I can tell you about the Covid-19 outbreak of 2019. It was an infectious disease caused by a novel coronavirus that first appeared in China in late 2019. It has since spread around the world, causing a global pandemic.
+Human: was it bad in India to covid-19
+AI: Yes, unfortunately the Covid-19 outbreak was quite bad in India. The country saw a rapid rise in cases and deaths, leading to widespread lockdowns and restrictions on movement.
+Human: is it still an outbreak in India or is it can be completely covered in India
+AI: Unfortunately, the Covid-19 outbreak is still ongoing in India. While the number of cases has decreased since the peak in May 2021, there are still many areas in the country that are affected by the virus.
+AI: Hey ... can you please raise your voice a bit so I can answer your questions
+Human: who was the Grammy winner of 2018
+AI: The 2018 Grammy Award for Album of the Year was won by Bruno Mars for his album 24K Magic.
+Human: and
+AI: What other questions do you have?
+Human: I would like to know that who was the best actor for the Oscars of 2017
+AI: The 2017 Oscar for Best Actor went to Casey Affleck for his performance in Manchester by the Sea.
+Human: okay thank you and exit
+	neutral
+	approval
+ curiosity
+	neutral
+	sadness
+ realization
+	sadness
+ worry
+	pride
+ excitement
+	curiosity
+	pride
+ surprise
+
+165

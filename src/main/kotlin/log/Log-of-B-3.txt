@@ -1,0 +1,30 @@
+AI: Hi
+Human: hey good afternoon what is your name
+AI: Hi there! My name is AI, nice to meet you.
+Human: hey nice to meet you too can you recommend me some movies
+AI: Sure thing! What kind of movies do you like?
+Human: I like science fiction
+AI: Great! I recommend you check out the movie "Blade Runner 2049" or "Ex Machina". They are both great science fiction movies. Enjoy!
+Human: could you tell me more about Blade Runner
+AI: Absolutely! Blade Runner 2049 is a 2017 science fiction film directed by Denis Villeneuve. It stars Ryan Gosling and Harrison Ford and is set in a dystopian future Los Angeles. It follows a blade runner who discovers a secret that could plunge what's left of society into chaos. It's a thrilling and visually stunning movie that's sure to keep you on the edge of your seat.
+Human: what kind of movies do you like what johndra
+AI: I'm a fan of all kinds of movies, but I especially like science fiction and fantasy. Some of my favorite movies are The Matrix, Inception, and Star Wars.
+Human: why do you like in Star Wars
+AI: I love Star Wars because it's an epic space opera that blends together elements of science fiction, fantasy, and mythology. It has a compelling story, interesting characters, and exciting action sequences. Plus, the special effects are amazing!
+Human: who do you like the most in Star Wars
+AI: It's hard to pick a favorite character in Star Wars, but I would have to say that I really like Han Solo. He's a lovable rogue who's always ready with a clever quip and he has a great sense of adventure. Plus, he's a great pilot!
+Human: can you tell me a joke with reference to Star Wars
+AI: Sure! Why did the stormtrooper buy an iPhone? He heard it had "droid" technology!
+Human: that's a good one okay thanks I had a nice conversation
+AI: It was great talking to you too! Have a great day!
+Human: exit
+
+curiosity
+neutral
+pride
+neutral
+neutral
+neutral
+pride
+
+169

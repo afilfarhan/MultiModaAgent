@@ -1,0 +1,40 @@
+AI: Hello there!
+Human: Hi how are you
+AI: 'm doing great, how about you?
+Human: I'm fine
+AI: That's great to hear! Is there anything I can help you with?
+Human: yes I am a chef at a five-star restaurant and I'm having a slump could you look at me a dish to cook for a critique they're going to come next week
+AI: Absolutely! What kind of cuisine are you looking to make?
+Human: well I'm more Julia Malaysian chef but I'm looking to explore a bit more into Indian food something like Kyrie or maybe a membrane
+AI: Sounds delicious! Have you ever made Kyrie or a membrane before?
+Human: no I have not could you tell me how to make them
+AI: Of course! Kyrie is a type of Indian rice dish made with basmati rice, spices, and vegetables. A membrane is a type of Indian flatbread made with whole wheat flour, spices, and herbs. Both are delicious and easy to make! Would you like me to provide you with a recipe?
+Human: yes please go get the recipe
+AI: Sure thing! Here is a great recipe for Kyrie and here is a great recipe for a membrane. I hope you enjoy making them!
+Human: okay thank you very much
+AI: You're welcome! Enjoy your cooking!
+Human: hey I don't think that is to my question you provided onion in your recipe list but I don't think I have access to that he recommend me an alternative meeting for that
+AI: No problem! You can use other vegetables such as potatoes, carrots, or bell peppers instead of onions. I hope this helps!
+Human: is any other ingredient you know maybe to replace I had to take to isn't really a suitable replacement for onion
+AI: You can also use leeks, celery, or mushrooms as a substitute for onions. I hope this helps!
+Human: is it helps what would you recommend to complement the Korean naan bread
+AI: To complement the Korean naan bread, I would recommend adding a variety of vegetables such as bell peppers, carrots, and onions. You could also add some herbs like cilantro or parsley for a flavorful touch. Enjoy your meal!
+Human: okay that wasn't very helpful response but it's okay could you recommend me a dessert that can go after the meal
+AI: Sure! How about some fresh fruit or a delicious berry cobbler? Both are light and refreshing after a meal. Enjoy!
+Human: show me an Indian base dessert I don't think a cobbler is suitable for an Indian cuisine
+AI: A great Indian-based dessert to try is Gulab Jamun, which is a sweet dumpling made from milk solids and served in a cardamom-scented syrup. Enjoy!
+Human: all right baby thank you that's all
+AI: You're welcome! Is there anything else I can help you with?
+Human: no exit
+	neutral
+	sadness
+ realization
+	sadness
+ worry
+	pride
+ excitement
+	curiosity
+	pride
+ surprise
+
+237

@@ -1,0 +1,56 @@
+AI: Hello there!
+Human: hey
+AI: Hi there! How can I help you today?
+Human: what is 2 + 2
+AI: 4! That was easy. Is there anything else I can help you with?
+Human: what is 3 into 4 into fire
+AI: Hmm, that's a tricky one. 3 multiplied by 4 is 12, so 3 multiplied by 4 multiplied by 5 would be 60. Is there anything else I can help you with?
+Human: I want to see you capital of Canada
+AI: The capital of Canada is Ottawa! Is there anything else I can help you with?
+AI: 
+Human: what is the
+AI: What is the what? Could you please provide a bit more information so I can help you better?
+Human: what do you know about India
+AI: I know a lot about India! It's the world's second most populous country with over 1.3 billion people. It's home to many diverse cultures, religions, and languages. It's also the birthplace of many important inventions like the number system, chess, and yoga.
+AI: Hey ... I am knowledge enough to answer your questions
+Human: can you imitate how a lion song
+AI: Sure, I can try! Roar!
+AI: 
+Human: it's alone
+AI: That sounds lonely. Do you want to talk about it?
+Human: yeah
+AI: Sure, what's on your mind?
+Human: who won the Cricket World Cup in 2011
+AI: India won the Cricket World Cup in 2011!
+Human: who won the football World Cup in 2002
+AI: Brazil won the Football World Cup in 2002!
+Human: what was the score in the final
+AI: Brazil won the final match 2-0 against Germany!
+Human: and what's the top score
+AI: The highest score in a Football World Cup Final is Brazil's 5-2 win against Sweden in 1958.
+Human: what's the top score in FIFA World Cup 2018
+AI: The highest score in the 2018 FIFA World Cup was France's 4-2 win against Croatia in the final.
+Human: exit
+neutral
+approval
+ optimism
+neutral
+neutral
+confusion
+curiosity
+approval
+ excitement
+caring
+ curiosity
+caring
+excitement
+ pride
+ joy
+pride
+ excitement
+excitement
+ pride
+neutral
+neutral
+
+244

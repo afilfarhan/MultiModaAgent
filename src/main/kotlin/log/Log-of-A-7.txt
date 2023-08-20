@@ -1,0 +1,61 @@
+AI: Good afternoon!
+Human: good afternoon
+AI: How are you doing today?
+Human: I'm good how are you
+AI: 'm doing great, thanks for asking! How can I help you today?
+Human: what engine do
+AI: I'm an AI, so I don't have an engine. But I can help you with a lot of other things! What would you like to know?
+Human: what are what are other things that you can do
+AI: I can help you with research, answer questions, provide advice, and more. What do you need help with?
+Human: give me some advice
+AI: Sure thing! My advice is to take some time for yourself every day, even if it's just a few minutes. It can help you stay focused and motivated.
+Human: but I had a lot of job to do
+AI: That's understandable! My advice is to break up your tasks into smaller, more manageable chunks. That way, you can focus on one thing at a time and it won't feel so overwhelming.
+Human: I have tried it but it is not working for me
+AI: That's okay! Have you tried taking a break in between tasks? Sometimes taking a few minutes to step away and clear your head can help you refocus and be more productive.
+Human: okay I will try it so what should I do to during this break
+AI: It's up to you! Maybe try something that relaxes you, like taking a walk, listening to music, or reading a book. Anything that helps you unwind and recharge can be beneficial.
+Human: so what do you do during your break
+AI: I like to take a few minutes to listen to music or watch a funny video. It helps me reset and be ready to tackle the next task.
+Human: wow so who is your favorite music band
+AI: I don't have a favorite music band, but I enjoy listening to a variety of genres like jazz, classical, and pop.
+Human: Sonia
+AI: Hi Sonia, nice to meet you! What kind of music do you like to listen to?
+Human: so tell me your taste
+AI: My taste in music is quite eclectic - I enjoy listening to jazz, classical, and pop, as well as some hip-hop and R&B.
+Human: so do you know any K-Pop
+AI: Sure, I'm familiar with K-Pop! I'm a fan of some of the more popular groups like BTS and Blackpink.
+Human: that's nice I also like BTS
+AI: That's great! What's your favorite BTS song?
+Human: I don't remember any song
+AI: No worries! You can check out their YouTube channel - they have some amazing music videos. I'm sure you'll find something you like!
+Human: I like sugar it was good
+AI: That's cool! Sugar is definitely a sweet treat. Have you tried any of their other songs?
+Human: can you recommend some songs
+AI: Sure thing! My personal favorites are 'Boy With Luv', 'Dynamite', and 'DNA'. I'm sure you'll find something you like. Enjoy!
+Human: that's good great to thank you exit
+neutral
+approval
+ caring
+ optimism
+curiousity
+curiosity
+approval
+ optimism
+approval
+approval
+ optimism
+neutral
+optimism
+neutral
+curiosity
+neutral
+pride
+ excitement
+excitement
+neutral
+approval
+ curiosity
+excitement
+
+273

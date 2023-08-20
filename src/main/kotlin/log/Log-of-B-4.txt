@@ -1,0 +1,27 @@
+AI: hello
+Human: hi
+AI: Hi there! How are you doing today?
+Human: I'm good how are you
+AI: I'm doing great, thanks for asking! What can I do for you today?
+Human: what can you do
+AI: I can help you with a variety of tasks, from providing information to helping you complete tasks. What do you need help with?
+Human: what I'm looking for a house in Edinborough how could I find a good house where can I find it
+AI: Sure thing! Edinborough is a great place to live. I'd recommend checking out real estate websites like Zillow or Trulia to find the perfect house for you. They both have great search filters to help you narrow down your search. Good luck!
+Human: how good is this place
+AI: Edinborough is a great place to live! It has a lot of things to offer, from parks and restaurants to shops and cultural attractions. I'm sure you'll find something that suits your needs.
+Human: and what about the living cost
+AI: Living costs in Edinborough can vary depending on the area you choose to live in. Generally, it's a bit more expensive than other parts of the UK, but it's still quite affordable. I'd recommend doing some research to find out more about the cost of living in different areas.
+Human: thank you very much
+AI: You're welcome! I'm glad I could help. Let me know if you have any other questions.
+Human: exercise
+AI: Exercise is a great way to stay healthy and fit! There are plenty of options in Edinborough, from outdoor activities like running and cycling to gyms and sports clubs. You can also join a fitness class or take up a new hobby like yoga or Pilates.
+Human: exit
+
+curiosity
+neutral
+pride
+neutral
+neutral
+neutral
+pride
+142

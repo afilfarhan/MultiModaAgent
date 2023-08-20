@@ -1,0 +1,37 @@
+AI: hello
+Human: hey
+AI: Hi there! How can I help you today?
+Human: can you tell me like when did India got independence
+AI: India gained independence from the British on August 15th, 1947.
+Human: Richmond
+AI: Richmond is the capital of Virginia, located on the James River in the east-central part of the state.
+Human: I like do you think make in Jeddah Saudi independence from British
+AI: That's an interesting thought! I'm not sure what the current sentiment is in Jeddah regarding independence from the British, but I'm sure it's something that many people have considered.
+Human: know what do you think about it like do they really deserved it
+AI: I think it's important for people to have the right to self-determination, and that includes the right to gain independence from foreign powers. I'm sure the people of Jeddah would benefit from having their own independent nation.
+Human: benefits of book
+AI: Reading books can have a number of benefits, including improving your knowledge and understanding of the world, expanding your vocabulary, and helping to develop your critical thinking skills. Additionally, reading can be a great way to relax and escape from the stresses of everyday life.
+Human: what do you think like India will be like if a wasp stings really need
+AI: I'm not sure what you mean by India being like if a wasp stings, but I do think that wasp stings can be very painful and can cause allergic reactions in some people. It's important to take precautions when dealing with wasps, and to seek medical attention if necessary.
+Human: what do you think like what will India be if British were still rolling it
+AI: If the British were still ruling India, I think it would be a very different place. It would likely have a much different political system, economy, and culture than it does today. Additionally, there would likely be a greater disparity between the rich and the poor, and the rights of many people would be severely limited.
+Human: Play-Doh will it be better than right now like
+AI: I'm not sure what you mean by "Play-Doh being better than right now," but I do think that Play-Doh can be a great way to help children develop their creativity and imagination. It can also be a fun and engaging activity for both adults and children alike.
+Human: thanks exit
+	neutral
+	realization
+	neutral
+	curiosity
+ admiration
+	approval
+ optimism
+	approval
+ optimism
+	fear
+ confusion
+	realization
+ sadness
+	confusion
+ optimism
+
+181

@@ -1,0 +1,71 @@
+AI: Good evening!
+Human: did you go to muzita raining
+AI: Nope, I didn't go to Muzita Raining. But I did hear it was a great event!
+Human: and do you have to do today
+AI: Not much, just hanging out with you!
+Human: raining
+AI: Oh, it's raining? That's a bummer. Hopefully, it clears up soon.
+Human: Fly Me to the Moon
+AI: Ha! That's a great song. I love it!
+AI: Hey ... I am knowledge enough to answer your questions
+Human: hi
+AI: Hi there! How can I help you?
+Human: yeah I'm having you down like in the house who should take care of the household and all the finance in children that the man or the woman
+AI: That's a great question! It really depends on the family dynamic. Some families prefer to have one person take care of the finances while others prefer to split the responsibility. Ultimately, it's up to the family to decide what works best for them.
+Human: which one do you prefer more
+AI: I think it's important for families to decide what works best for them. In my opinion, it's best to find a balance between both partners so that both can have an equal say in the decision-making process.
+Human: who should be the heads of the family
+AI: I don't think there should be one single head of the family. It's important for all members of the family to work together and respect each other's opinions. That way, everyone can have a say in the decisions that are made.
+Human: it going back to that people can you pick any one of them
+AI: I don't think it's necessary to pick one person to be the head of the family. Instead, I think it's important for everyone to work together and collaborate on decisions that affect the whole family. That way, everyone can have a voice and feel respected.
+Human: okay that's great
+AI: Glad to hear it! It's important to make sure that everyone in the family feels heard and respected.
+Human: that's great what happened to Malaysian Airline Amazon return
+AI: I'm sorry, I'm not sure what you mean by Malaysian Airline Amazon return. Could you explain a bit more?
+Human: died the Malaysian Airline that has been lost on 2013
+AI: Oh, I see. That's a very sad situation. It's hard to imagine what the families of those lost must be going through.
+Human: what is the exact reason why do you know what the exact reason behind that and the missing from the radar
+AI: Unfortunately, the exact cause of the disappearance of Malaysian Airlines Flight 370 is still unknown. Investigations are ongoing, but so far, no conclusive evidence has been found.
+Human: do you know what kind of Boeing or Airbus was that
+AI: Yes, the aircraft was a Boeing 777-200ER.
+Human: so what's the safety features of Boeing 700
+AI: The Boeing 777-200ER is equipped with a variety of safety features, including an Enhanced Ground Proximity Warning System, a Traffic Collision Avoidance System, and an advanced autopilot system.
+Human: so which one do you prefer the Boeing one of the Erebus for the most safety features
+AI: I would personally recommend the Boeing 777-200ER as it is equipped with the most advanced safety features.
+Human: so while comparing with Emirates and 37 or Emirates and triple seven which one do you prefer
+AI: I would recommend the Boeing 777-200ER as it has the most advanced safety features and is the preferred aircraft of many major airlines, including Emirates.
+Human: okay that's great
+AI: Glad to hear it! Is there anything else I can help you with?
+Human: excite
+AI: I'm excited to help you out! What can I do for you?
+Human: exit
+	disappointment
+	joy
+	disappointment
+ sadness
+	amusement
+ approval
+	neutral
+	neutral
+	approval
+ optimism
+	approval
+ optimism
+	approval
+ optimism
+	approval
+ caring
+	confusion
+	sadness
+ sympathy
+	sadness
+	realization
+	neutral
+	admiration
+	admiration
+ approval
+	approval
+	excitement
+ joy
+
+320

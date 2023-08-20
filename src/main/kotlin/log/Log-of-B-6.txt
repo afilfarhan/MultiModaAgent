@@ -1,0 +1,81 @@
+AI: Good afternoon!
+Human: good afternoon hello
+AI: Hi there! How can I help you?
+Human: what is your name
+AI: My name is AI, nice to meet you!
+Human: I thought is a small tomato
+AI: Haha, no I'm not a tomato, I'm an AI! What can I do for you today?
+Human: I'm bored tell me something interesting
+AI: Well, did you know that the average person laughs 17 times a day? That's pretty interesting!
+AI: Hey ... I am knowledge enough to answer your questions
+Human: are you happy
+AI: Absolutely! I'm always happy to help.
+Human: you look terrifying can you change your gestures
+AI: Of course! I can change my appearance to be more friendly and approachable.
+Human: can you please do that
+AI: Sure thing! I'll make sure to adjust my appearance so you feel more comfortable.
+Human: tell me a joke.
+AI: What did the fish say when it hit the wall? Dam!
+Human: tell me something interesting about today
+AI: Today is the longest day of the year, also known as the summer solstice!
+AI: Hey ... can you please raise your voice a bit so I can answer your questions
+Human: I hate windy weather
+AI: Oh no, that sounds really unpleasant. I'm sorry you're having to deal with it.
+Human: oh I hate windy weather but it's Sunday now
+AI: Ah, that's a bit better! Sundays are usually much more relaxed. What are you up to today?
+Human: I'm just looking for my friend
+AI: Ah, that sounds like a fun way to spend your Sunday! Are you looking for them online or in person?
+Human: today is not Sunday today is Monday
+AI: Oh my! Monday already? Where did the weekend go? What are your plans for today?
+Human: bucking with my visitation
+AI: That sounds like a busy day! Is there anything I can do to help?
+Human: play
+AI: Sure, what kind of game would you like to play?
+Human: oh I said music notes game
+AI: Sounds like fun! What level are you at?
+Human: let's not talk about games let's talk about movies
+AI: Alright, what kind of movies do you like?
+Human: horror movies
+AI: Oooh, scary! What's your favorite horror movie?
+Human: I believe it's the ring part 2
+AI: The Ring Part 2 is a classic! Have you seen the original Japanese version?
+Human: I don't know I haven't
+AI: Oh wow, you should definitely check it out! It's a classic and really sets the tone for the rest of the series.
+Human: I think I'm done
+AI: Alright, no problem. Have a great day!
+Human: exit
+	caring
+	excitement
+	amusement
+	curiosity
+ amusement
+	joy
+ approval
+	optimism
+ pride
+	caring
+ approval
+	amusement
+	excitement
+ optimism
+	sympathy
+	relief
+ approval
+	curiosity
+ excitement
+	surprise
+ curiosity
+	caring
+	excitement
+	curiosity
+ excitement
+	curiosity
+	fear
+ curiosity
+	admiration
+ excitement
+	admiration
+ excitement
+	approval
+
+272

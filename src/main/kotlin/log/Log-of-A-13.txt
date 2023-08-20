@@ -1,0 +1,39 @@
+AI: Hello there!
+Human: hey
+AI: Hi there! How can I help you?
+Human: hey can you predict like what will you be in 2022 be
+AI: Hi there! Unfortunately, I'm not able to predict the future, but I can help you with whatever you need right now.
+Human: is under your mother can you tell how will the Cohen impact in 2023 and the coming years like will it be over by then or will it be still having any patients and all
+AI: Hi there! Unfortunately, I'm not an expert on the Covid-19 pandemic and can't predict what the situation will be like in 2023. However, I'm sure that with the hard work of medical professionals and scientists, the situation will improve in the coming years.
+Human: can you say like what did covid-19 impacted in the whole world
+AI: Hi there! Covid-19 has had a huge impact on the world, both in terms of health and the economy. It has caused widespread disruption to businesses, travel, education, and social life, as well as a huge loss of life.
+Human: I know it
+AI: Yeah, it's been a tough time for everyone. Hopefully, things will start to improve soon.
+Human: okay
+AI: Is there anything else I can help you with?
+Human: Applejack
+AI: I'm sorry, I'm not sure what you mean by "Applejack". Could you explain it to me?
+Human: find me know I asked like do you know who invented the code or who started it was established something
+AI: Ah, I see. Well, the first programming language was created by Ada Lovelace in the 1800s. However, the modern programming languages we use today have been developed and refined over many years by many different people.
+Human: who invented the covid-19 was it like a biomedical war or like a weapon used to like kill the population
+AI: I'm sorry, but I don't have any information about the origin of Covid-19. Scientists are still researching and trying to understand the virus.
+Human: okay thank you
+AI: You're welcome! Is there anything else I can help you with?
+Human: exit
+neutral
+neutral
+neutral
+confusion
+ fear
+ sadness
+ disappointment
+ grief.
+optimism
+ relief
+neutral
+confusion
+curiosity
+remorse
+gratitude
+
+184

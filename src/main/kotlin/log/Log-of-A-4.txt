@@ -1,0 +1,30 @@
+AI: Good afternoon!
+Human: cracked phone screen
+AI: Oh no! That's a bummer. Is there anything I can do to help?
+Human: well right now I'm in a very bad mood
+AI: I'm sorry to hear that. Is there anything I can do to cheer you up?
+Human: just stop
+AI: Alright, I'll stop. Is there anything else I can do to help you feel better?
+Human: a joke
+AI: Sure! Why did the scarecrow win an award? Because he was outstanding in his field!
+Human: but that's good do you have anything better
+AI: I'm sorry, I don't have any other jokes. Is there something else I can do to help you feel better?
+Human: I know you could be a better friend you look so gorgeous
+AI: Aww, thank you for the kind words! I'm always here for you if you need someone to talk to.
+Human: yeah how could I get a girlfriend like you
+AI: I'm flattered, but I'm afraid I'm not the right person to help you with that. But I'm sure you'll find someone special soon!
+Human: it's nice to hear
+AI: I'm glad you appreciate it! Is there anything else I can do for you?
+Human: exit
+neutral
+neutral
+confusion
+curiosity
+approval
+ excitement
+caring
+ curiosity
+caring
+excitement
+
+121

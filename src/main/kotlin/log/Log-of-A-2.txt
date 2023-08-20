@@ -1,0 +1,37 @@
+AI: Hi
+AI: Hey ... I am knowledge enough to answer your questions
+Human: okay do you know anything about cricket
+AI: Sure! Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20-meter pitch. It's a popular sport in many countries, including India, Australia, and the UK.
+Human: yeah I mean do you know the rule in cricket
+AI: Absolutely! The basic rules of cricket are quite simple. The game is played between two teams of 11 players each. The aim is to score more runs than the opposing team. The players use a bat and ball to score runs by hitting the ball and running between the wickets.
+Human: none and I was talking about one particular rule called
+AI: Ah, you must be referring to the LBW rule. LBW stands for leg before wicket and it is a rule in cricket that states that a batsman can be given out if the ball strikes his leg in front of the wicket and would have gone on to hit the wicket had the batsman not been there.
+Human: now it's talking about Vacation review system
+AI: Sure thing! Vacation review systems are a great way to get feedback from customers on their experiences with a particular vacation destination. They can help businesses improve their services and products, as well as provide customers with an easy way to share their opinions and experiences.
+Human: no I was asking about position to review system
+AI: Ah, you must be referring to the position review system. This is a system that allows employers to review the performance of their employees based on their job position. It helps employers evaluate their employees' performance and make decisions about promotions, salary increases, and other personnel decisions.
+Human: then I was talking about
+AI: What would you like to know about?
+Human: decision review system
+AI: You must be referring to the decision review system. This system is used to evaluate decisions made by organizations and individuals. It helps to ensure that decisions are based on sound reasoning and that all relevant information has been taken into account. It also helps to identify areas of improvement and can be used to improve decision-making processes.
+Human: at what store can you download Cricket room signs
+AI: You can download Cricket Room Signs from the App Store or Google Play Store. You can also find them on websites such as Amazon or eBay.
+Human: I was talking about
+AI: What would you like to know about?
+Human: decision review system in cricket
+AI: You must be referring to the decision review system in cricket. This system is used to evaluate decisions made by the umpires during a cricket match. It helps to ensure that decisions are based on the laws of the game and that all relevant information has been taken into account. It also helps to identify areas of improvement and can be used to improve decision-making processes in cricket.
+Human: yeah that's colored exactly by exit
+
+neutral
+neutral
+neutral
+confusion
+ fear
+ sadness
+ disappointment
+ grief.
+optimism
+ relief
+neutral
+
+247

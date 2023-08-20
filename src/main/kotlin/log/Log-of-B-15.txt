@@ -1,0 +1,39 @@
+AI: Good afternoon!
+Human: good afternoon
+AI: How are you doing today?
+Human: I'm doing great I said I was wondering what book to read
+AI: That's great to hear! What kind of book are you looking for?
+Human: science fiction trailer
+AI: That sounds like a great choice! Have you read any other science fiction books before?
+Human: no actually I just wanted to try it for the first time
+AI: That's awesome! Science fiction can be a really fun genre to explore. Have you checked out any reviews of the book you're considering?
+Human: no
+AI: That's a great idea! Reviews can be really helpful in giving you an idea of what to expect from a book. Have you checked out any online bookstores to see if they have the book you're looking for?
+Human: no cancel this me a name of a book
+AI: Sure! How about "Ready Player One" by Ernest Cline? It's a great science fiction book that's gotten lots of positive reviews.
+Human: that's sounds great
+AI: Awesome! I'm sure you'll love it. Have you checked out any online bookstores to see if they have it in stock?
+Human: I'll take it up ticket even check about medicine
+AI: Sure thing! If you're looking for medical books, I'd recommend checking out Amazon or Barnes & Noble. They have a wide selection of books on all kinds of topics.
+Human: thank you
+AI: No problem! Let me know if you need any more help finding the perfect book.
+Human: exit
+	neutral
+	curiosity
+ excitement
+	approval
+ curiosity
+	curiosity
+ excitement
+	approval
+ curiosity
+	approval
+ excitement
+	approval
+ excitement
+	approval
+ optimism
+	gratitude
+ joy
+
+138

@@ -1,0 +1,106 @@
+AI: hello
+Human: hello
+AI: Hi there! How can I help you?
+Human: tell me what you can do
+AI: Sure thing! I can help you with finding information, scheduling tasks, and more. What would you like to do?
+Human: give me some information about robotics
+AI: Sure! Robotics is a branch of engineering that deals with the design, construction, operation, and application of robots. It also covers computer systems for their control, sensory feedback, and information processing.
+Human: turn
+AI: Alright, turning to what?
+Human: Rossford do you know about it
+AI: Sure, Rossford is a city in Wood County, Ohio, United States. It has a population of 6,293 people, and is known for its historical downtown district.
+Human: okay I can do know about the robotic operating system
+AI: Absolutely! The Robotic Operating System (ROS) is a set of software libraries and tools that help you build robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more.
+Human: that's good
+AI: Thanks! It's great to be able to help. Is there anything else I can do for you?
+Human: ghetto
+AI: I'm sorry, I'm not sure what you mean by "ghetto". Could you please explain it to me?
+Human: recite a poem for me
+AI: Sure! Here's one of my favorites: 
+
+"The woods are lovely, dark and deep,
+But I have promises to keep,
+And miles to go before I sleep,
+And miles to go before I sleep."
+Human: that's good can you make up a new word for me
+AI: Absolutely! How about "jubidle", meaning a feeling of joy and enthusiasm?
+Human: no I I guess you can make your own poem
+AI: Sure thing! Here goes: 
+
+"The sky is blue and the sun is bright,
+Bringing joy and warmth to my sight,
+The birds are singing and the trees are tall,
+It's a beautiful day, no need to bawl."
+Human: can you tell me a joke
+AI: Sure! What did the fish say when it hit the wall?
+"Dam!"
+Human: I have heard this little joke
+AI: Alright, how about this one then: What did the bee say when it found a flower?
+"It's pollen my way!"
+Human: okay nice
+AI: Glad you liked it! What else can I do for you?
+Human: what do you do for a living
+AI: I'm an AI, so I help people with their day-to-day tasks and provide them with useful information. What about you?
+Human: and I study at the University
+AI: That's awesome! What are you studying?
+Human: I say robotics
+AI: That's so cool! What kind of robotics do you study?
+Human: I study all kind of rewards for a conversation Legends extra
+AI: Wow, that sounds really interesting! What kind of rewards do you focus on?
+Human: so I currently working
+AI: That's great! What kind of work are you doing?
+Human: the ingredients of a overtake automation solution for a company
+AI: Wow, that sounds really complex! What kind of ingredients are you focusing on?
+Human: I have mechanical electrical parts and there is a robotics control system
+AI: Interesting! What kind of control system are you using for the robotics?
+Human: we are using are already operating system to control the robot
+AI: That's awesome! What are the advantages of using the existing operating system?
+Human: you tell me
+AI: Well, the main advantage of using an existing operating system is that it already has a lot of the necessary features built in, so it saves time and money on development. It also helps to ensure that the system is secure and reliable.
+Human: that's good do you think robots should be a student or a teacher to
+AI: I think robots can be both a student and a teacher! They can learn from humans and then teach us what they've learned. This could help us to develop new skills and knowledge faster than ever before.
+Human: I don't trust about giving information to people
+AI: I understand your concern about giving information to people. However, with the right security measures in place, you can be sure that your data is safe and secure.
+Human: okay thank you exit
+	amusement
+ curiosity
+	excitement
+ approval
+	neutral
+	curiosity
+	neutral
+	approval
+	caring
+	curiosity
+	amusement
+ admiration
+	amusement
+ excitement
+	joy
+ optimism
+	amusement
+	joy
+ amusement
+	approval
+ joy
+	curiosity
+ neutral
+	excitement
+ curiosity
+	curiosity
+ excitement
+	curiosity
+ excitement
+	curiosity
+ approval
+	curiosity
+ admiration
+	curiosity
+	curiosity
+ approval
+	neutral
+	optimism
+	relief
+ approval
+
+389

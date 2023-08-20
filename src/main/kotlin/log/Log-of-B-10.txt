@@ -1,0 +1,51 @@
+AI: Hi
+Human: Greek mythology
+AI: Interesting! What's your favorite myth?
+Human: hello baby I don't get it in any minute
+AI: Hi there! Sorry, I don't understand what you mean. Could you please explain it to me?
+Human: it's never bothered that can we talk about something else
+AI: Sure, what would you like to talk about?
+Human: Memphis Tigers football
+AI: Wow, that sounds like an exciting topic! What do you like most about Memphis Tigers football?
+Human: I would like to talk something about Manchester City
+AI: Sure, what would you like to know about Manchester City?
+Human: is Manchester City better than Chelsea at football
+AI: That's a tough one! Manchester City has been very successful in recent years, but Chelsea has had its own successes too. It's really hard to say which team is better!
+Human: Destin leg hundred millions of money this year and last year
+AI: Wow, that's a lot of money! It looks like Manchester City is really investing in their team. It'll be interesting to see how that affects their performance in the coming years.
+Human: do you think that it's able to dominate in the future like maybe in like the next 10 years will they be a champion instrumental
+AI: It's hard to say for sure, but I think Manchester City has the potential to be a dominant force in the next 10 years. They have a great team and lots of money to invest in it, so I wouldn't be surprised if they were successful.
+Human: I need to swing by you in a cups like you need to know how to use the money like you can say that money can be great thanks
+AI: Absolutely! Money can be a great tool when used wisely. It looks like Manchester City is making smart investments, so hopefully they'll be able to reap the rewards in the future.
+Human: Leo day like Manchester City or do you like Taylor Swift
+AI: That's a tough one! I'm a fan of both Manchester City and Taylor Swift. They both have great talents and have achieved a lot of success.
+Human: no problem getting
+AI: No problem at all! Is there anything else I can help you with?
+Human: I just want to know did you want to be like Mortals here today just answer me
+AI: Well, I'm not a mortal, but I do understand the desire to make the most of each day. I strive to make the most of my time and resources to make a positive impact on the world.
+Human: so I have a question you have to choose one of the options I give you so my question is do you like Manchester day or self it
+AI: That's a tough one! I think I'd have to go with Manchester City. They have a long history of success and I'm a big fan of their style of play.
+Human: yeah I can replace the main light.
+AI: Great! That sounds like a great plan. Is there anything else I can help you with?
+Human: exit
+	curiosity
+	confusion
+	excitement
+	curiosity
+ excitement
+	curiosity
+	confusion
+	admiration
+ curiosity
+	optimism
+	optimism
+ approval
+	admiration
+	caring
+ optimism
+	admiration
+ optimism
+	admiration
+	approval
+
+253

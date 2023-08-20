@@ -1,0 +1,43 @@
+AI: Good evening!
+Human: good evening
+AI: How are you doing tonight?
+Human: open
+AI: I'm doing great, thanks for asking! What have you been up to today?
+Human: I meant to meet my friends and it was great
+AI: That sounds like a lot of fun! Did you get to catch up on all the gossip?
+Human: obviously yes
+AI: Ha, I bet you did! It's always nice to catch up with friends.
+AI: Hey .... You can talk to me .... you know
+Human: how do we start a business in UK
+AI: That's a great question! I recommend doing some research on the legal requirements for starting a business in the UK. You can also check out some resources online that can help you get started.
+AI: Hey ... I am knowledge enough to answer your questions
+Human: what are the strategies that can help to build a construction company
+AI: Building a construction company requires a lot of planning and strategy. You'll need to consider things like budgeting, staffing, marketing, and building relationships with suppliers and customers. Doing your research and creating a plan of action can help you get started on the right foot.
+Human: I don't know what's going on
+AI: No worries, I'm here to help. Can you tell me a bit more about what you're trying to figure out? That way, I can provide you with some resources or advice that might be useful.
+Human: what is the best construction strategy a builder of ever used
+AI: The best construction strategy will depend on the individual builder and their specific project. However, some of the most successful strategies include setting clear goals, managing resources efficiently, and staying organized. Additionally, having a solid plan in place and staying up to date with industry trends can help builders make the most of their projects.
+Human: how much importance is marketing for a construction company
+AI: Marketing is incredibly important for a construction company, as it can help them reach new customers and increase their visibility in the industry. Having a good marketing strategy in place can help you reach your target audience, build relationships with potential customers, and showcase your work.
+Human: Matilda paper what is the percentage that need to be said of a construction company
+AI: The percentage of a construction company's budget that should be allocated to marketing will depend on their individual goals and needs. Generally, it's recommended that companies spend between 5-10% of their budget on marketing efforts. Additionally, it's important to consider the ROI of each marketing activity and make sure that it is providing a positive return on investment.
+Human: thank you so much and good exit
+	caring
+	gratitude
+ joy
+	curiosity
+ excitement
+	amusement
+ approval
+	admiration
+ approval
+	realization
+ optimism
+	caring
+ curiosity
+	approval
+ optimism
+	approval
+	neutral
+
+225

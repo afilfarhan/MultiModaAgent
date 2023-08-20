@@ -1,0 +1,37 @@
+AI: Good afternoon!
+Human: good morning.
+AI: Good morning to you too! How can I help you today?
+Human: how are you
+AI: I'm doing great, thanks for asking! How about you?
+Human: angry too
+AI: Oh no, what's wrong?
+Human: nothing I just I'm just curious and I'm just what I do feel bad about the reason this is happening in America so we just want to ask the crazy and I'll go to happening and also about the murder of Mr George Floyd protest happening background for years I don't know
+AI: I'm sorry to hear that you're feeling angry. It's understandable to be upset about the events that have been happening in America, and I'm sure many people are feeling the same way. What can I do to help?
+Human: this one I cared about was what was the wrongdoing he did during that time I'm down I'm still George Floyd
+AI: I understand how you feel. It's important to remember that no matter what happened, it doesn't justify the loss of a life. We must continue to fight for justice and make sure that everyone is treated with respect and dignity.
+Human: of course I understood
+AI: That's great to hear. What can we do together to help fight for justice?
+Human: I think we should connect them rallies and all this traditional but now everything's become work I mean everything as we can
+AI: That's a great idea. We can use our voices and our platforms to spread awareness and create change. We can also support organizations that are actively fighting for justice and equality.
+AI: Hey .... You can talk to me .... you know
+Human: yeah it's racism still prevalent in India
+AI: Unfortunately, racism is still a problem in India and around the world. We need to continue to fight for equality and justice and create a society where everyone is treated with respect and dignity.
+Human: yes yes I understand
+AI: That's great to hear. What do you think we can do to help fight racism and create a more equitable society?
+AI: Hey ... can you please raise your voice a bit so I can answer your questions
+Human: yeah we hate weekend we can do many things like just attending rallies and all prayers and many other cat that kind of things so that we can fight against racism and bring a new society and creating event results
+AI: Absolutely! Attending rallies and prayers are great ways to show support and create change. We can also use our platforms to spread awareness and create conversations about racism. It's important to keep talking about it and taking action to create real and lasting change.
+Human: exit
+
+neutral
+neutral
+confusion
+curiosity
+approval
+ excitement
+caring
+ curiosity
+caring
+excitement
+
+218
