@@ -76,7 +76,7 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
         return Rvalue(response, arrayOf())
     }
 
-    //Few-shot learning Prompt
+    //Engineered Prompt for gesture prediction
     var trainemotion="admiration\n" +
             "amusement\n" +
             "anger\n" +
@@ -101,36 +101,12 @@ fun getNLGResponseFromGPT(histval: Int = 6): Rvalue {
             "pride\n" +
             "realization\n" +
             "relief\n" +
-            "remorse\n" +
+            "resmorse\n" +
             "sadness\n" +
             "surprise\n" +
-            "neutral\nIf you're in the Bay Area check out Flying Over Walls.\tamusement\n" +
-            "Would you rather I hadn't posted this article? Don't want to talk about it?\tanger, confusion\n" +
-            "This one tilted concrete square in my neighborhood that I keep tripping over.\tanger, annoyance\n" +
-            "yes, agreed. \tapproval\n" +
-            "Dude, I'll be your friend any time\tcaring\n" +
-            "Why would they lie?\tconfusion\n" +
-            "Does anyone have a link to the rainbow song clip? I tried looking everywhere and can't find it\tcuriosity, sadness\n" +
-            "That was the middle school dream\tdesire\n" +
-            "Yeah being up by 20 every game does that unfortunately\tdisappointment, sadness\n" +
-            "Just feels rude I guess\tdisapproval\n" +
-            "I'm always paranoid of people following me when I am driving home. I would have pooed my pants yikes.\tdisgust, fear\n" +
-            "It was less painful than a bee sting! I felt so silly afterwards!\tembarrassment\n" +
-            "What a combo of food\texcitement\n" +
-            "This is a terrible idea\tfear\n" +
-            "This is all soooo nice. What nice people.\tgratitude\n" +
-            "Sorry for your loss; this story is heartwarming.\tgrief, sadness\n" +
-            "Happy to help\tjoy\n" +
-            "I like in Iowa. The weather part is true\tapproval, love\n" +
-            "Is there something I'm missing here? I don't see the pun.\tnervousness\n" +
-            "It sounds like you'd have a great time with Final Fantasy XIV.\toptimism\n" +
-            "Proud of you!\tpride\n" +
-            "I can see why! I would totally be offended too!\trealization\n" +
-            "Afraid not. I was just given a different perspective.\trelief\n" +
-            "My comment provided shame. I am nothing.\tembarrassment, remorse\n" +
-            "Agreed. But considering their poor cars were carrying 1200+ lbs of weight, that might slow things down lol\tamusement, sadness\n" +
-            "Oh man, are we actually getting a real Ghostbusters sequel?\tcuriosity, surprise\n" +
-            "Thought I saw a shot glass in there the first time I watched this.\tneutral\n"
+            "neutral\n"+
+            "each of the above label represent emotions expressed by human beings\n" +
+            "give the appropriate label or labels to the below sentence\n"
 
 
 var outputfile=""
@@ -139,46 +115,7 @@ var outputfile=""
     //Few-shot learning prompt is stored here
     var temptrain=trainemotion
    temptrain+=response.drop(lengthofprompt)
-//    try {
-//        File("C:\\Users\\mohaa\\IdeaProjects\\MultiModaAgent\\src\\main\\kotlin\\furhatos\\app\\mrsmurphy\\flow\\main\\test.txt").useLines { lines ->
-//            lines.forEach { line ->
-//                var temp=trainemotion
-//                temp+=line
-////                println(temp)
-//                completionRequest = CompletionRequest.builder()
-//                    .model("text-davinci-003")
-//                    .temperature(0.9)
-//                    .topP(topP)
-//                    .frequencyPenalty(frequencyPenalty)
-//                    .presencePenalty(presencePenalty)
-//                    .maxTokens(maxTokens)
-//                    .prompt(temp)
-//                    .echo(true)
-//                    .build();
-//                val completion = service.createCompletion(completionRequest).choices.first().text
-//                var emot = completion.trim()
-//                if(i==0){
-//                outputfile+= getLastLine(emot) +"\n"
-//                println(getLastLine(emot))
-//                i++}
-//                else{
-//                    outputfile+= getLastLine(emot) +"\n"
-//                    println(getLastLine(emot))}
-//
-//            }
-//        }
-//    } catch (e: Exception) {
-//        println("Error reading the file: ${e.message}")
-//    }
-//    try {
-//        File("outtest.txt").bufferedWriter().use { writer ->
-//            writer.flush()
-//            writer.write(outputfile)
-//            writer.close()
-//        }
-//    } catch (e: Exception) {
-//        println("Error writing the file: ${e.message}")
-//    }
+
 
                     completionRequest = CompletionRequest.builder()
                     .model("text-davinci-003")
@@ -200,8 +137,7 @@ var outputfile=""
 
 
 
-//   var num= compareTextFiles("outtest.txt","realvalue.txt")
-//    println("The total score is "+ num)
+
 
     //trimming the response string and emotion string to get only required
     var res=response.drop(lengthofprompt+1)
